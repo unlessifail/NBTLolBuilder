@@ -1,13 +1,13 @@
 import customtkinter as ctk
 from PIL import Image
-import lolpy
 
 app = ctk.CTk()
 
 # Atributos da Janela
 
 app.title("Negão Builds Technologies")
-app.state('normal')
+app.after(0, 
+          lambda: app.wm_state('zoomed'))
 app.geometry("1440x870")
 app._set_appearance_mode("dark")
 
